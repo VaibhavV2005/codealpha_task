@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Your Cart</title>
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="app.js"></script>
+</head>
+<body>
+<header>
+  <a href="index.html">Products</a>
+  <a href="cart.html">Cart</a>
+  <a href="login.html" id="accountLink">Login</a>
+</header>
+<div class="container">
+  <h2>Your Cart</h2>
+  <div id="cartItems"></div>
+  <div class="total" id="cartTotal"></div>
+
+  <h3>Checkout</h3>
+  <form id="checkoutForm">
+    <label>Address</label>
+    <input type="text" id="address" required placeholder="Street, City, ZIP">
+    <input type="submit" value="Place Order">
+  </form>
+
+  <div id="orderResult"></div>
+</div>
+</body>
+</html>

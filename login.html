@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Account</title>
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="app.js"></script>
+</head>
+<body>
+<header>
+  <a href="index.html">Products</a>
+  <a href="cart.html">Cart</a>
+  <a href="login.html" id="accountLink">Login</a>
+</header>
+<div class="container">
+  <h2>Account</h2>
+  <div style="display:grid; grid-template-columns:1fr 1fr; gap:24px;">
+    <div>
+      <h3>Register</h3>
+      <form id="registerForm">
+        <label>Username</label>
+        <input type="text" id="regUsername" required>
+        <label>Email</label>
+        <input type="email" id="regEmail" required>
+        <label>Password</label>
+        <input type="password" id="regPassword" required>
+        <input type="submit" value="Register">
+      </form>
+      <div id="registerMsg"></div>
+    </div>
+    <div>
+      <h3>Login</h3>
+      <form id="loginForm">
+        <label>Email</label>
+        <input type="email" id="loginEmail" required>
+        <label>Password</label>
+        <input type="password" id="loginPassword" required>
+        <input type="submit" value="Login">
+      </form>
+      <div id="loginMsg"></div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
